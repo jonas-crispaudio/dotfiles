@@ -82,8 +82,12 @@ nmap <leader>s" ciw"<C-r>""<esc>
 nmap <leader>s{ ciw{<C-r>"}<esc>
 nmap <leader>s( ciw(<C-r>")<esc>
 nmap <leader>s[ ciw[<C-r>"]<esc>
+
+" Center the screen when switch search results
 nmap n nzz
 nmap N Nzz
+
+" Navigate windows better
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
@@ -104,8 +108,7 @@ augroup reload_vimrc
             augroup END
 
 " Remember last cursor position
-set viminfo='20,\"500   " Keep a .viminfo file.
-              
+set viminfo='20,\"500   " Keep a .viminfo file
 " When editing a file, always jump to the last cursor position
 autocmd BufReadPost *
     \ if ! exists("g:leave_my_cursor_position_alone") |
