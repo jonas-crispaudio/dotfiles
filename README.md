@@ -18,6 +18,7 @@ Use the [Makefile](./Makefile) to install everything [listed above](#package-ove
 
     apt-get install make
     cd ~/dotfiles
+    edit HOME_DIR variable fitting to the user to install (for example: /home/testuser
     sudo make setup
 
 And to update everything the system and the vim plugins:
