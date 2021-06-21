@@ -38,6 +38,14 @@ augroup numbertoggle
     autocmd BufLeave,FocusLost,InsertEnter * set norelativenumber
 augroup END
 
+" Highlight unwanted characters
+highlight ExtraSpaces ctermbg=red guibg=red
+highlight Tabs ctermbg=red guibg=red
+autocmd BufEnter *
+    \ match ExtraSpaces /\s\+$/ " trainling whitespaces
+autocmd BufEnter *
+    \ match Tabs /\t/ " tabs
+
 
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
