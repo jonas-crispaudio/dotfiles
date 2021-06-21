@@ -39,12 +39,9 @@ augroup numbertoggle
 augroup END
 
 " Highlight unwanted characters
-highlight ExtraSpaces ctermbg=red guibg=red
-highlight Tabs ctermbg=red guibg=red
+highlight WrongCharMark ctermbg=red guibg=red
 autocmd BufEnter *
-    \ match ExtraSpaces /\s\+$/ " trainling whitespaces
-autocmd BufEnter *
-    \ match Tabs /\t/ " tabs
+    \ match WrongCharMark /\s\+$\|\t/ " (trailing whitespaces or tabs)
 
 
 
