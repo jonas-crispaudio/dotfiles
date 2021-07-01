@@ -98,6 +98,9 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
+" Compilation
+nnoremap <C-c> :!cd <Compilepath> && make -j6<Enter>
+
 
 
 
