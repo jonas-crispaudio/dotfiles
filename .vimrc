@@ -99,7 +99,7 @@ nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
 " Compilation
-nnoremap <C-c> :!cd <Compilepath> && make -j6<Enter>
+nnoremap <C-c> :!cd /home/jonas/Desktop/workspace/GZA/buildHybrid && make -j6<Enter>
 
 
 
@@ -155,6 +155,10 @@ set spell
 
 " Increase undo limit
 set history=500
+
+" When split do it on the right side/below
+set splitright
+set splitbelow
 
 
 
